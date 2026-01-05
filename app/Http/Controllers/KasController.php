@@ -91,18 +91,4 @@ class KasController extends Controller
         return redirect()->route('kas.index')
                         ->with('success', 'Data kas berhasil dihapus');
     }
-
-    /**
-     * Export laporan kas
-     */
-    public function laporan()
-    {
-        $kas = Kas::orderBy('tanggal', 'desc')->get();
-        
-        $totalPemasukan = Kas::pemasukan()->sum('jumlah');
-        $totalPengeluaran = Kas::pengeluaran()->sum('jumlah');
-        $saldo = $totalPemasukan - $totalPengeluaran;
-
-        return view('kas.laporan', compact('kas', 'totalPemasukan', 'totalPengeluaran', 'saldo'));
-    }
 }

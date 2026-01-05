@@ -10,4 +10,3 @@ Route::get('/', function () {
 
 // Routes untuk Kas
 Route::resource('kas', KasController::class);
-Route::get('/kas-laporan', [KasController::class, 'laporan'])->name('kas.laporan');

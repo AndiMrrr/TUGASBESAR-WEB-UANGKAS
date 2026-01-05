@@ -39,11 +39,6 @@
                             <i class="fas fa-money-bill-wave"></i> Kas
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('kas.laporan') ? 'active' : '' }}" href="{{ route('kas.laporan') }}">
-                            <i class="fas fa-file-alt"></i> Laporan
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>

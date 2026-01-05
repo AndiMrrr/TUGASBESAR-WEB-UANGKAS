@@ -105,11 +105,6 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="mt-3">
-                            <a href="{{ route('kas.laporan') }}" class="btn btn-secondary">
-                                <i class="fas fa-file-pdf"></i> Laporan
-                            </a>
-                        </div>
                     @else
                         <div class="alert alert-info">Belum ada data transaksi kas.</div>
                     @endif
